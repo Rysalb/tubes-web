@@ -1,0 +1,52 @@
+
+php artisan migrate:fresh --seed
+
+
+
+Post::create([
+'title' => 'Trending Top 1',
+'category_id' => 1,
+'slug' => 'judul-1-trending',
+'excerpt' => 'pertama asdlhasldkhlkLorem ipsum dolor ke sit amet consectetur adipisicing elit. Fuga asperiores accusantium ut nam earum eveniet soluta iste tempora eius, deleniti totam magnam natus excepturi laborum velit ullam nostrum iusto doloribus debitis, nisi quos numquam unde',
+'body' => '<p>asdasdasdLorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores accusantium ut nam earum eveniet soluta iste tempora eius, deleniti totam magnam natus excepturi laborum velit ullam nostrum iusto doloribus debitis, nisi quos numquam unde animi et. Nemo blanditiis fugiat nisi similique numquam ut eius necessitatibus temporibus qui cupiditate maxime corrupti culpa, nam impedit dolore perferendis amet! Similique atque rem saepe. Possimus reprehenderit doloribus, dolore dolores, deserunt voluptatem assumenda impedit provident ratione, quasi a veritatis tenetur.</p><p>Aut quasi quas, cupiditate dolorum velit iste, asperiores architecto, quia quaerat repellendus quo saepe incidunt enim? Sint atque deleniti in, saepe nulla et illum dicta impedit, quam molestiae provident nesciunt deserunt officiis maiores amet esse reiciendis architecto quis maxime modi sit. Sapiente, temporibus molestiae. Excepturi asdasdcupiditate totam veritatis quidem necessitatibus, voluptatibus reprehenderit animi asperiores suscipit maxime? Natus beatae</p> <p>deleniti eum laboriosam ipsum possimus, iste quisquam exercitationem eaque numquam aperiam amet, in maiores fugit placeat distinctio aliquam tenetur iure impedit corporis, modi accusamus et maxime. Voluptatibus adipisci maiores odio esse, reprehenderit mollitia ipsum, enim, inventore ipsa commodi deleniti? Repudiandae laborum soluta impedit. Ipsa, velit optio.</p> '
+])
+
+
+Post::create([
+'title' => 'Hots Top 1',
+'category_id' => 2,
+'slug' => 'judul-1-hots',
+'excerpt' => 'pertama asdlhasldkhlkLorem ipsum dolor ke sit amet consectetur adipisicing elit. Fuga asperiores accusantium ut nam earum eveniet soluta iste tempora eius, deleniti totam magnam natus excepturi laborum velit ullam nostrum iusto doloribus debitis, nisi quos numquam unde',
+'body' => '<p>asdasdasdLorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores accusantium ut nam earum eveniet soluta iste tempora eius, deleniti totam magnam natus excepturi laborum velit ullam nostrum iusto doloribus debitis, nisi quos numquam unde animi et. Nemo blanditiis fugiat nisi similique numquam ut eius necessitatibus temporibus qui cupiditate maxime corrupti culpa, nam impedit dolore perferendis amet! Similique atque rem saepe. Possimus reprehenderit doloribus, dolore dolores, deserunt voluptatem assumenda impedit provident ratione, quasi a veritatis tenetur.</p><p>Aut quasi quas, cupiditate dolorum velit iste, asperiores architecto, quia quaerat repellendus quo saepe incidunt enim? Sint atque deleniti in, saepe nulla et illum dicta impedit, quam molestiae provident nesciunt deserunt officiis maiores amet esse reiciendis architecto quis maxime modi sit. Sapiente, temporibus molestiae. Excepturi asdasdcupiditate totam veritatis quidem necessitatibus, voluptatibus reprehenderit animi asperiores suscipit maxime? Natus beatae</p> <p>deleniti eum laboriosam ipsum possimus, iste quisquam exercitationem eaque numquam aperiam amet, in maiores fugit placeat distinctio aliquam tenetur iure impedit corporis, modi accusamus et maxime. Voluptatibus adipisci maiores odio esse, reprehenderit mollitia ipsum, enim, inventore ipsa commodi deleniti? Repudiandae laborum soluta impedit. Ipsa, velit optio.</p> '
+])
+
+
+Post::create([
+'title' => 'Personal Top 1',
+'category_id' => 3,
+'slug' => 'judul-1-personal',
+'excerpt' => 'pertama asdlhasldkhlkLorem ipsum dolor ke sit amet consectetur adipisicing elit. Fuga asperiores accusantium ut nam earum eveniet soluta iste tempora eius, deleniti totam magnam natus excepturi laborum velit ullam nostrum iusto doloribus debitis, nisi quos numquam unde',
+'body' => '<p>asdasdasdLorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores accusantium ut nam earum eveniet soluta iste tempora eius, deleniti totam magnam natus excepturi laborum velit ullam nostrum iusto doloribus debitis, nisi quos numquam unde animi et. Nemo blanditiis fugiat nisi similique numquam ut eius necessitatibus temporibus qui cupiditate maxime corrupti culpa, nam impedit dolore perferendis amet! Similique atque rem saepe. Possimus reprehenderit doloribus, dolore dolores, deserunt voluptatem assumenda impedit provident ratione, quasi a veritatis tenetur.</p><p>Aut quasi quas, cupiditate dolorum velit iste, asperiores architecto, quia quaerat repellendus quo saepe incidunt enim? Sint atque deleniti in, saepe nulla et illum dicta impedit, quam molestiae provident nesciunt deserunt officiis maiores amet esse reiciendis architecto quis maxime modi sit. Sapiente, temporibus molestiae. Excepturi asdasdcupiditate totam veritatis quidem necessitatibus, voluptatibus reprehenderit animi asperiores suscipit maxime? Natus beatae</p> <p>deleniti eum laboriosam ipsum possimus, iste quisquam exercitationem eaque numquam aperiam amet, in maiores fugit placeat distinctio aliquam tenetur iure impedit corporis, modi accusamus et maxime. Voluptatibus adipisci maiores odio esse, reprehenderit mollitia ipsum, enim, inventore ipsa commodi deleniti? Repudiandae laborum soluta impedit. Ipsa, velit optio.</p> '
+])
+
+
+Category::create([
+    'name' => 'Trending',
+    'slug' => 'trending'
+    ])
+
+
+    Category::create([
+    'name' => 'Hots',
+    'slug' => 'hots'
+    ])
+
+
+    Category::create([
+    'name' => 'Personal',
+    'slug' => 'personal'
+    ])
+
+
+
+    
