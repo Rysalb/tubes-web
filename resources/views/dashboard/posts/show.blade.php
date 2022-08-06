@@ -23,7 +23,7 @@
                 </div>
                 
                 @else
-            <img src="https://source.unsplash.com/1200x400/?game" alt="" class="img-fluid mt-3">
+            <img src="../../images/No-Image.png" width="500" height="500" alt="" class="img-fluid mt-3">
 
             @endif
 

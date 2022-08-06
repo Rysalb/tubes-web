@@ -6,14 +6,14 @@
         <div class="col-md-8">
             <h1 class="mb-3">{{ $post->title }}</h1>
             <br>
-            <p>By. <a href="/?user={{ $post->user->username }}">{{ $post->user->name }}</a> in <a href="/?category={{ $post->category->slug }}"> {{ $post->category->name }}</a></p>
+            <p> Kategori <a href="/?category={{ $post->category->slug }}"> {{ $post->category->name }}</a></p>
 
             @if ($post->image)
 
             <img src="{{ asset('storage/' . $post->image) }}" alt="" class="img-fluid">
         
         @else
-        <img src="https://source.unsplash.com/1200x400/?book" alt="" class="img-fluid">
+        <img src="../images/No-Image.png" width="300" height="300" alt="" class="img-fluid">
     @endif
 
 
