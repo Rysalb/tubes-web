@@ -6,14 +6,14 @@
         <div class="col-md-8">
             <h1 class="mb-3">{{ $post->title }}</h1>
             <br>
-            <p>By. <a href="/posts?user={{ $post->user->username }}">{{ $post->user->name }}</a> in <a href="/posts?category={{ $post->category->slug }}"> {{ $post->category->name }}</a></p>
+            <p>By. <a href="/?user={{ $post->user->username }}">{{ $post->user->name }}</a> in <a href="/?category={{ $post->category->slug }}"> {{ $post->category->name }}</a></p>
 
             @if ($post->image)
 
             <img src="{{ asset('storage/' . $post->image) }}" alt="" class="img-fluid">
         
         @else
-        <img src="https://source.unsplash.com/1200x400/?game" alt="" class="img-fluid">
+        <img src="https://source.unsplash.com/1200x400/?book" alt="" class="img-fluid">
     @endif
 
 
@@ -26,7 +26,7 @@
    
 
 
-<a href="/posts">Back to Posts</a>
+<a href="/">Back to List Books</a>
         </div>
     </div>
 </div>

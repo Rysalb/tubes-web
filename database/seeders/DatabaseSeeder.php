@@ -36,18 +36,18 @@ class DatabaseSeeder extends Seeder
         User::factory(3)->create();
 
         Category::create([
-            'name' => 'Trending',
-            'slug' => 'trending'
+            'name' => 'Pendidikan',
+            'slug' => 'pendidikan'
         ]);
 
         Category::create([
-            'name' => 'Hots',
-            'slug' => 'hot'
+            'name' => 'Kehidupan',
+            'slug' => 'kehidupan'
         ]);
 
         Category::create([
-            'name' => 'Info',
-            'slug' => 'info'
+            'name' => 'Fiksi',
+            'slug' => 'fiksi'
         ]);
 
 

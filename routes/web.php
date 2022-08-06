@@ -20,31 +20,31 @@ use App\Http\Controllers\DashboardPostController;
 |
 */
 
-Route::get('/', function () {
-    return view('landing', [
-        "title" => "Home"
-    ]);
-});
+// Route::get('/', function () {
+//     return view('landing', [
+//         "title" => "Home"
+//     ]);
+// });
 
-Route::get('/kalkulator', function () {
-    return view('kalkulator');
-});
+// Route::get('/kalkulator', function () {
+//     return view('kalkulator');
+// });
 
-Route::get('/movieList', function () {
-    return view('movieList');
-});
+// Route::get('/movieList', function () {
+//     return view('movieList');
+// });
 
-Route::get('/profile', function () {
-    return view('profile', [
+// Route::get('/profile', function () {
+//     return view('profile', [
 
-        "name" => "Rysa Laksana",
-        "email" => "rysalaksana@webmail.umm.ac.id",
-        "role" => "Admin",
-        "image" => "1.jpg"
-    ]);
-});
+//         "name" => "Rysa Laksana",
+//         "email" => "rysalaksana@webmail.umm.ac.id",
+//         "role" => "Admin",
+//         "image" => "1.jpg"
+//     ]);
+// });
 
-
+Route::get('/', [PostController::class, 'index']);
 Route::get('/posts', [PostController::class, 'index']);
 //halaman single post
 Route::get('posts/{post:slug}', [PostController::class, 'show']);

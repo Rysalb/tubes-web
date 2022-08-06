@@ -31,7 +31,7 @@
       <img src="{{ asset('storage/' . $posts[0]->image) }}" alt="" class="card-img-top">
   
   @else
-  <img class="card-img-top" src="https://source.unsplash.com/1200x400/?game" alt="No Image">
+  <img class="card-img-top" src="https://source.unsplash.com/1200x400/?book" alt="No Image">
 @endif
     <div class="card-body text-center">
       <h3 class="card-title"><a href="/posts/{{ $posts[0]->slug }}" class="text-decoration-none text-dark">{{ $posts[0]->title }}</a></h3>
@@ -40,7 +40,7 @@
       </small>
       <p class="card-text">{{ $posts[0]->excerpt }}</p>
 
-      <a href="/posts/{{ $posts[0]->slug }}" class="text-decoration-none btn btn-primary" >Read More</a>
+      <a href="/posts/{{ $posts[0]->slug }}" class="text-decoration-none btn btn-primary" >Detail</a>
     </div>
   </div>
 
@@ -58,7 +58,7 @@
                     <img src="{{ asset('storage/' . $post->image) }}" alt="" class="img-fluid">
                 
                 @else
-                <img class="card-img-top" src="https://source.unsplash.com/500x400/?game" alt="Card image cap">
+                <img class="card-img-top" src="https://source.unsplash.com/500x400/?book" alt="Card image cap">
             @endif
 
                
@@ -70,7 +70,7 @@
                         </small>
                   </p>
                   <p class="card-text">{{ $post->excerpt }}</p>
-                  <a href="/posts/{{ $post->slug }}" class="btn btn-primary">Read more</a>
+                  <a href="/posts/{{ $post->slug }}" class="btn btn-primary">Detail</a>
                 </div>
               </div>
         </div>

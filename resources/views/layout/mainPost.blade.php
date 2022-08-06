@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Praktikum Web | {{ $title }}</title>
+    <title>Tubes Web | {{ $title }}</title>
 
      {{-- bootstrap CSS --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -16,16 +16,16 @@
     
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div Class="container">
-      <a class="navbar-brand" href="/">Teyvat News</a>
+      <a class="navbar-brand" href="/">Book Store</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link {{ ($title === "Home")? 'active': '' }}" href="/">Home</a>
-          <a class="nav-item nav-link {{ ($title === "All Posts")? 'active': '' }}" href="/posts">Blog</a>
+          <a class="nav-item nav-link {{ ($title === "All Posts")? 'active': '' }}" href="/">Produk Buku</a>
           <a class="nav-item nav-link {{ ($title === "Post Categories")? 'active': '' }}" href="/categories">Category</a>
          
         </div>
